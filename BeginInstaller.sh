@@ -52,8 +52,8 @@ mkdir ~/go/src
 mkdir ~/go/bin
 sudo tar -C /usr/local -xzf go1.9.3.linux-amd64.tar.gz
 echo "#GOLANG Settings" >> ~/.profile
-echo export GOROOT=\$HOME/go >> ~/.profile
-echo export PATH=\$PATH:\$GOROOT/bin >> ~/.profile
+echo export GOPATH=\$HOME/go >> ~/.profile
+echo export PATH=\$PATH:\$GOPATH/bin >> ~/.profile
 sudo su
 echo export PATH=\$PATH:/usr/local/go/bin >> /etc/profile
 exit
