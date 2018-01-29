@@ -33,6 +33,9 @@ sudo service ssh start
 echo "Install GIT"
 sudo apt-get install git -y
 
+echo "Instakk GITK"
+sudo apt-get install gitk -y
+
 echo "Install Repo"
 sudo apt-get install repo -y
 
@@ -68,6 +71,16 @@ sudo apt-get install oracle-java8-installer
 
 echo "Install Open JDK 8"
 sudo apt-get install openjdk-8-jdk -y
+
+echo "Install Maven"
+sudo apt-get install maven -y
+
+echo "Install SDKMAN"
+curl -s "https://get.sdkman.io" | bash
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+
+echo "Install GRADLE 4.1"
+sdk install gradle 4.1
 
 echo "Install System Settings"
 sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev -y
