@@ -87,6 +87,9 @@ sudo apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite
 sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip
 -y
 
+echo "Install Screen"
+sudo apt-get install screen -y
+
 # For Build Android 4.4.4 OS
 # Install Java 6 in Oracle Binary File
 # chmod a+x jdk-6u45-linux-x64.bin
