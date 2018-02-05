@@ -90,15 +90,14 @@ sudo apt-get install git-core gnupg flex bison gperf build-essential zip curl zl
 echo "Install Screen"
 sudo apt-get install screen -y
 
-# For Build Android 4.4.4 OS
-# Install Java 6 in Oracle Binary File
-# chmod a+x jdk-6u45-linux-x64.bin
-# ./jdk-6u45-linux-x64.bin
-# mv jdk1.6.0_30 java-6-oracle
-# wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/webupd8/update-java-0.5b
-# chmod +x update-java-0.5b
-# sudo ./update-java-0.5b
-#
-# Install Make Version 3.81
-# wget http://mirrors.kernel.org/ubuntu/pool/main/m/make-dfsg/make_3.81-8.2ubuntu3_amd64.deb
-# sudo dpkg -i make_3.81-8.2ubuntu3_amd64.deb
+echo "Open VPN"
+wget -O - https://swupdate.openvpn.net/repos/repo-public.gpg|apt-key add -
+echo "deb http://build.openvpn.net/debian/openvpn/stable xenial main" > /etc/apt/sources.list.d/openvpn-aptrepo.list
+sudo apt-get install openvpn -y
+
+echo "Install WPS"
+wget http://kdl1.cache.wps.com/ksodl/download/linux/a21//wps-office_10.1.0.5707~a21_amd64.deb
+sudo dpkg -i wps-office*.deb
+
+# If Keyboard Language isn't Turkish
+# sudo dpkg-reconfigure keyboard-configuration
