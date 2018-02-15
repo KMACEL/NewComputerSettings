@@ -6,7 +6,7 @@
 # Install Java6
 chmod a+x jdk-6u45-linux-x64.bin
 ./jdk-6u45-linux-x64.bin
-mv jdk1.6.0_30 java-6-oracle
+mv jdk1.6.0_30 /usr/lib/jvm/java-6-oracle
 wget https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/webupd8/update-java-0.5b
 chmod +x update-java-0.5b
 sudo ./update-java-0.5b
