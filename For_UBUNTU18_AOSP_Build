@@ -1,0 +1,4 @@
+#! /bin/bash
+
+sudo apt-get install -y --allow-downgrades openssl1.0=1.0.2n-1ubuntu5.3
+echo "export OPENSSL_DIR=/usr/lib/ssl1.0/" >> ~/.profile
